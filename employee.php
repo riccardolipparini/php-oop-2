@@ -27,14 +27,14 @@
             $this -> surname = $surname;
        }
         public function setBirthDate($birthDate){
-            $this -> birtDate = $birthDate;
+            $this -> birthDate = $birthDate;
    }
 
         public function getName(){
             return $this -> name;
    }
         public function getBirthDate(){
-            return $this -> birtDate;
+            return $this -> birthDate;
         }
 
         public function getSurname(){
@@ -91,6 +91,12 @@
      $per -> setBirthDate("18/07/81");
      
      echo $per;
+
+     $emp = new Employee($per -> getName(), $per -> getSurname(), "1400€");
+     $emp -> setBirthDate("18/07/81");
+     $emp -> setHiringDate("10/03/05");
+
+     echo "<br>" . $emp  
     ?>
 </body>
 </html>
