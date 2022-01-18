@@ -90,7 +90,7 @@
      $per = new Person("Giovanni", "Rossi");
      $per -> setBirthDate("18/07/81");
      
-     echo $per -> getBirthDate();
+     echo $per;
     ?>
 </body>
 </html>
